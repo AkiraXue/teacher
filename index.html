@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>成长不停步</title>
+    <link rel="stylesheet" href="css/index.css?v=170">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            border-radius: 50px !important;
+        }
+        
+        .swiper-container {
+            width: 640px;
+            height: 748px;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 100px;
+            height: 100px;
+            margin-top: 327px;
+        }
+        
+        .swiper-button-next {
+            right: 80px;
+            background: url(../img/p_2annu.jpg)no-repeat;
+            z-index: 6;
+        }
+        
+        .swiper-button-prev {
+            left: 173px;
+            background: url(../img/p_1annu.jpg)no-repeat;
+            z-index: 6;
+        }
+        
+        .swiper-slide img {
+            border-radius: 30px;
+            width: 100%;
+        }
+        
+        .swiper-container-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 25px;
+        }
+        
+        .swiper-pagination-current {
+            color: #85cac8;
+            font-size: 20px;
+        }
+        
+        .swiper-pagination-total {
+            color: #85cac8;
+            font-size: 20px;
+        }
+        
+        .xig {
+            color: #85cac8;
+            font-size: 20px;
+        }
+        
+        .tvp_container {
+            background: none !important;
+        }
+        
+        .tvp_poster_img {
+            background-color: transparent !important;
+        }
+        
+        .tenvideo_player {
+            background: none !important;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d1f4179452b6915852915ed754873957";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>   
+</head>
+<body>
+    <div class="hemo">
+        <div class="hemo1">
+            <img class="p1_2" src="./img/p1_2.png">
+            <img class="p1_3" src="./img/p1_3.png">
+            <img class="p_6" src="./img/p_6.png">
+            <img class="p_7" src="./img/p_6.png">
+            <div class="box box1">
+                <!--   poster="" -->
+                <div class="hezi">
+                    <div class="p1_4" id="mod_player_1"></div>
+                    <div class="p1_5 dn" id="mod_player_2"></div>
+                    <div class="p1_6 dn" id="mod_player_3"></div>
+                </div>
+                <div class="hez">
+                    <div class="p1_jl p_pl"></div>
+                    <div class="p1_j2 p_p2"></div>
+                    <div class="p1_j3 p_p3"></div>
+                </div>
+            </div>
+            <div class="box2">
+                <!-- <img src="./img/jt.png" class="jt"> -->
+                <div class="bos_1 " id="wrapper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="p_1"><img src="./img/p_1.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_2.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_3.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_4.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_5.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_6.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_7.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_8.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_9.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_10.jpg"></div>
+                            <div class="bos_2 swiper-slide" id="scroller"><img src="./img/p_11.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_12.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/p_13.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">13</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layer">
+        <div class="bg"></div>
+        <img src="" alt="">
+    </div>
+
+    <!-- 背景音乐 -->
+    <div class="musicOn" id="musicBt">
+        <audio src="./voice/yipi.mp3" class="msc_bg" id="msc_bg"></audio>
+    </div>
+
+
+    <!-- class="msc_bg" id="msc_bg" -->
+    <script src="./js/jquery-1.9.0.min.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="./js/WechatJSSDK.js"></script>
+    <script src="./js/tvp.player_v2.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/app.js?v=60"></script>
+    <!-- <script src="./js/jroll.js"></script> -->
+    <script type="text/javascript">
+        let jssdk = new WechatJSSDK();
+        jssdk.share({
+            title: "速收！为丰台区2020年新教师打造的专属视频上线啦！",
+            desc: "欢迎你的加入，等你来！",
+            title1: '速收！为丰台区2020年新教师打造的专属视频上线啦！',
+            link: "http://bainianshuren.h5.yscase.com/",
+            imgUrl: "http://bainianshuren.h5.yscase.com/img/fx.jpg",
+            complete: function() {
+                // 分享完做什么
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                renderFraction: function(currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' + '<span class="xig">' + "/" + '</span>' + '<span class="' + totalClass + '"></span>' + '<span class="p_14k">' +
+                        ' 滑 动 查 看 更 多 寄 语 ' + '</span>'
+
+                }
+            },
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
+        // var jroll = new JRoll("#wrapper", {
+        // id: "demo2",
+        // scrollBarY: "custom",
+        // scrollBarFade: true
+        // });
+
+        // jroll.on("scroll", function() {
+        //     //该干嘛干嘛去...
+        //     $('.jt').fadeOut(500)
+        // });
+
+        // jroll.on("refresh", function() {
+        //     $('.jt').fadeIn(500)
+        // });
+
+        function isArrFun(arr) {
+            let flag = false;
+            console.log(arr);
+            arr.forEach(element => {
+                if (element) {
+                    flag = true;
+                }
+            });
+            return flag;
+        }
+
+        var msc = document.querySelector('#msc_bg');
+        var btn = document.querySelector('#musicBt');
+
+        let isPlayFlag = [false, false, false];
+
+
+        var video = new tvp.VideoInfo();
+        video.setVid("m3135majdqr");
+
+        var player = new tvp.Player();
+        player.create({
+            width: 593,
+            height: 334,
+            video: video,
+            modId: "mod_player_1",
+            autoplay: false,
+            playerType: 'html5',
+            pic: tvp.common.getVideoSnapMobile("m3135majdqr"),
+            onplaying: function() {
+                player1.pause();
+                player2.pause();
+                isPlayFlag[0] = true;
+
+                msc.pause();
+                openMusic = false;
+                btn.className = 'musicOff';
+            },
+            onpause() {
+                isPlayFlag[0] = false;
+                if (!isArrFun(isPlayFlag)) {
+                    msc.play();
+                    openMusic = true;
+                    btn.className = 'musicOn';
+                }
+            }
+        });
+
+        var video1 = new tvp.VideoInfo();
+        video1.setVid("b3138vuoem9");
+
+        var player1 = new tvp.Player();
+        player1.create({
+            width: 593,
+            height: 334,
+            video: video1,
+            modId: "mod_player_2",
+            autoplay: false,
+            playerType: 'html5',
+            pic: tvp.common.getVideoSnapMobile("b3138vuoem9"),
+            onplaying: function() {
+                player.pause();
+                player2.pause();
+                msc.pause();
+                openMusic = false;
+                btn.className = 'musicOff';
+                isPlayFlag[1] = true;
+            },
+            onpause() {
+                // msc.play();
+                // openMusic = true;
+                // btn.className = 'musicOn';
+                isPlayFlag[1] = false;
+                if (!isArrFun(isPlayFlag)) {
+                    msc.play();
+                    openMusic = true;
+                    btn.className = 'musicOn';
+                }
+            }
+        });
+
+        var video2 = new tvp.VideoInfo();
+        video2.setVid("m313772lugy");
+
+        var player2 = new tvp.Player();
+        player2.create({
+            width: 593,
+            height: 334,
+            video: video2,
+            modId: "mod_player_3",
+            autoplay: false,
+            playerType: 'html5',
+            pic: tvp.common.getVideoSnapMobile("m313772lugy"),
+            onplaying: function() {
+                player1.pause();
+                player.pause();
+                msc.pause();
+                openMusic = false;
+                btn.className = 'musicOff';
+                isPlayFlag[2] = true;
+            },
+            onpause() {
+                // msc.play();
+                // openMusic = true;
+                // btn.className = 'musicOn';
+                isPlayFlag[2] = false;
+                if (!isArrFun(isPlayFlag)) {
+                    msc.play();
+                    openMusic = true;
+                    btn.className = 'musicOn';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+</head>
